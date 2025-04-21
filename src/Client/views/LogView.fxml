@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.12"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Client.views.LogViewController"
+      spacing="10" alignment="CENTER" prefWidth="500" prefHeight="400">
+
+    <Label text="Log Entries for Today" style="-fx-font-size: 16px;"/>
+    <TableView fx:id="logTable" prefHeight="350">
+        <columns>
+            <TableColumn fx:id="timeColumn" text="Time" prefWidth="200"/>
+            <TableColumn fx:id="messageColumn" text="Message" prefWidth="300"/>
+        </columns>
+    </TableView>
+</VBox>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="21.0.4" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="Server.model.Vinyl">
+    <void property="artist">
+     <string>fsdfs</string>
+    </void>
+    <void property="borrowedBy">
+     <int>0</int>
+    </void>
+    <void property="id">
+     <int>1</int>
+    </void>
+    <void property="releaseYear">
+     <int>332</int>
+    </void>
+    <void property="state">
+     <object class="Server.model.states.BorrowedState"/>
+    </void>
+    <void property="title">
+     <string>dscfs</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Server.model.Vinyl">
+    <void property="artist">
+     <string>hjfsdfhjs</string>
+    </void>
+    <void property="id">
+     <int>1</int>
+    </void>
+    <void property="releaseYear">
+     <int>8</int>
+    </void>
+    <void property="state">
+     <object class="Server.model.states.AvailableState"/>
+    </void>
+    <void property="title">
+     <string>hsffhj</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Server.model.Vinyl">
+    <void property="artist">
+     <string>fdsjfsj</string>
+    </void>
+    <void property="id">
+     <int>2</int>
+    </void>
+    <void property="releaseYear">
+     <int>3333</int>
+    </void>
+    <void property="reservedBy">
+     <int>0</int>
+    </void>
+    <void property="state">
+     <object class="Server.model.states.AvailableAndReservedState"/>
+    </void>
+    <void property="title">
+     <string>dfsfsa</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Server.model.Vinyl">
+    <void property="artist">
+     <string>fsdf</string>
+    </void>
+    <void property="id">
+     <int>1</int>
+    </void>
+    <void property="releaseYear">
+     <int>333</int>
+    </void>
+    <void property="state">
+     <object class="Server.model.states.AvailableState"/>
+    </void>
+    <void property="title">
+     <string>fsdf</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Server.model.Vinyl">
+    <void property="artist">
+     <string>dsfs</string>
+    </void>
+    <void property="id">
+     <int>1</int>
+    </void>
+    <void property="releaseYear">
+     <int>3456</int>
+    </void>
+    <void property="state">
+     <object class="Server.model.states.AvailableState"/>
+    </void>
+    <void property="title">
+     <string>dsfsd</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Server.model.Vinyl">
+    <void property="artist">
+     <string>aaa</string>
+    </void>
+    <void property="id">
+     <int>1</int>
+    </void>
+    <void property="releaseYear">
+     <int>1232</int>
+    </void>
+    <void property="state">
+     <object class="Server.model.states.AvailableState"/>
+    </void>
+    <void property="title">
+     <string>test1</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

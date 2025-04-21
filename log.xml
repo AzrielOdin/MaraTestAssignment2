@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="21.0.4" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="Storage.LoggerSingleton$LogEntry">
+    <void property="message">
+     <string>admin borrowed: dscfs</string>
+    </void>
+    <void property="timestamp">
+     <string>2025-04-21T12:53:08.919149100</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Storage.LoggerSingleton$LogEntry">
+    <void property="message">
+     <string>admin [0] borrowed: dscfs</string>
+    </void>
+    <void property="timestamp">
+     <string>2025-04-21T12:53:08.940079100</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Storage.LoggerSingleton$LogEntry">
+    <void property="message">
+     <string>admin [0] borrowed: dscfs</string>
+    </void>
+    <void property="timestamp">
+     <string>2025-04-21T12:53:08.954032</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Storage.LoggerSingleton$LogEntry">
+    <void property="message">
+     <string>Removed: dscfs</string>
+    </void>
+    <void property="timestamp">
+     <string>2025-04-21T12:53:23.884685300</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Storage.LoggerSingleton$LogEntry">
+    <void property="message">
+     <string>admin [0] removed: dscfs</string>
+    </void>
+    <void property="timestamp">
+     <string>2025-04-21T12:53:23.886678500</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Storage.LoggerSingleton$LogEntry">
+    <void property="message">
+     <string>admin [0] removed: dscfs</string>
+    </void>
+    <void property="timestamp">
+     <string>2025-04-21T12:53:23.889668100</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Storage.LoggerSingleton$LogEntry">
+    <void property="message">
+     <string>Added: test1</string>
+    </void>
+    <void property="timestamp">
+     <string>2025-04-21T12:53:36.671055800</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

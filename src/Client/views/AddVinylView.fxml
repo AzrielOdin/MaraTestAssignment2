@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" prefHeight="211.0" prefWidth="366.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.views.AddVinylController">
+    <Label style="-fx-font-size: 18px;" text="Add New Vinyl" />
+    <TextField fx:id="titleField" promptText="Enter title" />
+    <TextField fx:id="artistField" promptText="Enter artist" />
+    <TextField fx:id="releaseYearField" promptText="Enter release year" />
+    <Button fx:id="addVinylButton" onAction="#addVinyl" text="Add Vinyl" />
+    <Label fx:id="statusLabel" />
+</VBox>
+

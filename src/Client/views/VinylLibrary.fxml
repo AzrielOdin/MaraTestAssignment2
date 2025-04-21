@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane id="State" maxHeight="609.0" maxWidth="949.0" minHeight="442.0" minWidth="780.0" prefHeight="609.0" prefWidth="938.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.views.VinylViewController">
+    <!-- VBox for Label and Table -->
+    <VBox AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <Label fx:id="statusLabel" text="Vinyl status updates will appear here." />
+        <TableView fx:id="vinylTable" prefHeight="483.0" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="titleColumn" prefWidth="135.0" text="Title" />
+                <TableColumn fx:id="artistColumn" prefWidth="120.20001220703125" text="Artist" />
+                <TableColumn fx:id="releaseYearColumn" prefWidth="84.199951171875" text="Release Year" />
+                <TableColumn fx:id="stateColumn" prefWidth="177.20004272460938" text="State" />
+                <TableColumn fx:id="reservedByColumn" prefWidth="91.79998779296875" text="Reserved By" />
+                <TableColumn fx:id="borrowedByColumn" prefWidth="89.0" text="Borrowed By" />
+                <TableColumn fx:id="markedForRemovalColumn" prefWidth="102.199951171875" text="MarkedRemove" />
+            </columns>
+        </TableView>
+    </VBox>
+
+    <!-- VBox for Buttons on the Left -->
+    <VBox spacing="10" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <Button fx:id="borrowButton" onAction="#onBorrowVinylButtonPress" prefWidth="110.0" text="Borrow" />
+        <Button fx:id="returnButton" onAction="#onReturnButtonPress" prefWidth="110.0" text="Return" />
+        <Button fx:id="reserveButton" onAction="#onReserveButtonPress" prefWidth="110.0" text="Reserve" />
+        <Button fx:id="unreserveButton" onAction="#onUnreserveButtonPress" prefWidth="110.0" text="Unreserve" />
+        <Button fx:id="markForRemovalButton" onAction="#onMarkForRemovalButtonPress" prefWidth="110.0" text="Mark for Removal" />
+        <Button fx:id="unmarkForRemovalButton" onAction="#onUnmarkForRemoval" prefWidth="110.0" text="Unmark for Removal" />
+        <Button fx:id="removeButton" onAction="#onRemoveVinylButtonPress" prefWidth="110.0" text="Remove" />
+        <Button fx:id="addVinylButton" onAction="#openAddVinylWindow" prefWidth="110.0" text="Add Vinyl" />
+        <Button fx:id="addUserButton" onAction="#openAddUserWindow" prefWidth="110.0" text="Add User" />
+    </VBox>
+
+    <!-- TextArea for Log Messages -->
+    <TextArea fx:id="logTextArea" editable="false" prefHeight="100.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+
+
+</AnchorPane>
