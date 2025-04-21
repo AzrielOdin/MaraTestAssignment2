@@ -22,17 +22,6 @@ public class ClientHandler implements Runnable {
     try {
       this.out = new ObjectOutputStream(socket.getOutputStream());
       this.in = new ObjectInputStream(socket.getInputStream());
-
-      // Send live updates when vinyl list changes
-      model.addPropertyChangeListener(evt -> {
-        try {
-          out.writeObject(new Response("update", model.getVinyls()));
-          out.flush();
-        } catch (IOException e) {
-          e.printStackTrace();
-        }
-      });
-
     } catch (IOException e) {
       e.printStackTrace();
     }
@@ -58,9 +47,9 @@ public class ClientHandler implements Runnable {
 
       switch (type) {
         case "getVinyls":
-          return new Response("getVinyls", model.getVinyls());
+          return new Response("ok", model.getVinyls());
         case "getUsers":
-          return new Response("getUsers", model.getUsers());
+          return new Response("ok", model.getUsers());
         case "addUser":
           model.addUser(request.getUser());
           return new Response("ok", null);
