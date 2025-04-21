@@ -6,6 +6,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 import java.util.List;
+import java.util.UUID;
 
 public class VinylDisplay {
   private final String title;
@@ -15,7 +16,7 @@ public class VinylDisplay {
   private final String borrowedBy;
   private final String reservedBy;
   private final String markedForRemoval;
-  private final int id;
+  private final String id;
   private StringProperty state;
 
   public VinylDisplay(Vinyl vinyl, List<User> users) {
@@ -73,9 +74,11 @@ public class VinylDisplay {
     return markedForRemoval;
   }
 
-  public int getId() {
+  public String getId() {
     return id;
   }
+
+
 
   private String resolveUserName(List<User> users, Integer userId, String defaultMessage) {
     if (userId == null) return defaultMessage;

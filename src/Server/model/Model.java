@@ -1,5 +1,7 @@
 package Server.model;
 
+import Server.networking.ClientHandler;
+
 import java.util.List;
 import java.beans.PropertyChangeListener;
 
@@ -21,4 +23,6 @@ public interface Model {
   void removeVinyl(Vinyl vinyl);
 
   void addPropertyChangeListener(PropertyChangeListener listener);
+
+  void removePropertyChangeListener(PropertyChangeListener clientHandler);
 }

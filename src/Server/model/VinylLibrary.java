@@ -36,6 +36,13 @@ public class VinylLibrary implements Model, Serializable
   public void addPropertyChangeListener(PropertyChangeListener listener) {
     pcs.addPropertyChangeListener(listener);
   }
+
+  @Override
+  public void removePropertyChangeListener(PropertyChangeListener listener) {
+    pcs.removePropertyChangeListener(listener);
+  }
+
+
   private void saveToXML() {
     XMLStorage.saveVinylsToXML("vinyls.xml", vinyls);
     XMLStorage.saveUsersToXML("users.xml", users);
@@ -79,12 +86,12 @@ public class VinylLibrary implements Model, Serializable
        saveToXML();
      }
   }
-  public Vinyl findVinylById(int vinylIdToFind) {
+  public Vinyl findVinylById(String vinylIdToFind) {
     synchronized (lock)
     {
       for (Vinyl vinyl : vinyls)
       {
-        if (vinyl.getId() == vinylIdToFind)
+        if (vinyl.getId().equals(vinylIdToFind))
         {
           return vinyl;
         }
@@ -97,7 +104,7 @@ public class VinylLibrary implements Model, Serializable
     {
       Vinyl vinyl = findVinylById(v.getId());
       vinyl.markForRemoval();
-      pcs.firePropertyChange("vinylMarkedForRemoval", null, vinyl);
+      pcs.firePropertyChange("isMarkedForRemoval", null, vinyl);
       saveToXML();
     }
   }
@@ -106,7 +113,7 @@ public class VinylLibrary implements Model, Serializable
     {
       Vinyl vinyl = findVinylById(v.getId());
       vinyl.unmarkForRemoval();
-      pcs.firePropertyChange("vinylUnmarkedForRemoval", null, vinyl);
+      pcs.firePropertyChange("isMarkedForRemoval", null, vinyl);
       saveToXML();
     }
   }

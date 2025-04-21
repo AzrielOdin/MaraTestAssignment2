@@ -101,9 +101,9 @@ public class VinylViewModel {
     setStatusMessage("Removed: " + vinyl.getTitle());
   }
 
-  public Vinyl getVinylById(int id) {
+  public Vinyl getVinylById(String id) {
     return model.getVinyls().stream()
-        .filter(v -> v.getId() == id)
+        .filter(v -> v.getId().equals(id))
         .findFirst()
         .orElse(null);
   }
